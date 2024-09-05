@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
     setTimeout(function () {
         document.querySelector('.loader').remove()
         document.querySelector('.app-wrapper').classList.remove('d-none')
-    }, 1500);
+    }, 500);
     
     headerFixed();
 });
