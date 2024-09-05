@@ -365,6 +365,12 @@ body {
     color: var(--primary-color);
 }
 
+.combo-product-detail .color-family-group .color-family-box,
+.combo-product-detail .size-group .size-box {
+    font-size: 10px;
+    padding: 2px 7px;
+}
+
 .btn-primary:hover {
     background-color: var(--primary-color);
 }
