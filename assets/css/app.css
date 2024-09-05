@@ -35,7 +35,6 @@ body {
     flex-grow: 1;
     max-width: 500px;
     display: flex;
-    margin: 0 20px;
 }
 
 .search-bar input {
@@ -58,6 +57,10 @@ body {
     background-color: var(--primary-color);
     color: var(--white-color);
     cursor: pointer;
+}
+
+.search-bar .search-btn i {
+    display: none;
 }
 
 .header-right {
@@ -403,9 +406,7 @@ body {
     height: 100%;
     border: 4px solid #f4f4f4;
     border-top-color: #2466a4;
-    /* Primary color */
     border-bottom-color: #ef6523;
-    /* Accent color */
     animation: spin 1.5s linear infinite;
 }
 
@@ -438,7 +439,6 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
-
     .header,
     .content,
     .footer {
@@ -455,7 +455,6 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-
     .header,
     .content,
     .footer {
@@ -485,12 +484,12 @@ body {
     .header {
         position: fixed;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 3;
     }
 
-    .header ~ .wrapper {
+    .header~.wrapper {
         margin-top: 65px;
     }
 
@@ -509,7 +508,6 @@ body {
         border-radius: 30px;
     }
 
-    .logo,
     .header-right,
     .nav-menu {
         display: none;
@@ -522,10 +520,6 @@ body {
 
     #homeCarousel img {
         max-height: 200px;
-    }
-
-    .footer {
-        margin-bottom: 60px;
     }
 
     .bottom-bar {
@@ -580,18 +574,44 @@ body {
     .product-active-image {
         height: 250px;
     }
+
+    .footer-bottom {
+        padding-bottom: 60px;
+    }
 }
 
 @media (max-width: 480px) {
+    .header~.wrapper {
+        margin-top: -8px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 60px;
+    }
+
     .search-bar {
         border: 1px solid var(--primary-color);
         border-radius: 30px;
-        padding: 3px;
+        padding: 5px;
     }
 
     .search-bar input {
         border: none;
+        padding: 1px 10px;
         border-radius: 30px;
+    }
+
+    .search-bar .search-btn {
+        padding: 2px 8px;
+    }
+
+    .search-bar .search-btn i {
+        display: block;
+    }
+
+    .search-bar .search-btn-text {
+        display: none;
     }
 
     #homeCarousel {
