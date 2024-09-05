@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Flipket</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/icons.min.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+
+    <script>
+        function loader() {
+            document.writeln(`<div class="loader">
+            <img src="./assets/images/half-logo.png" alt="Logo" class="logo-spinner">
+            <div class="spinner"></div>
+        </div>`)
+        }
+
+        loader();
+    </script>
+</head>
+
+<body>
+    <div class="app-wrapper d-none">
+        <div class="header">
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </a>
+            <form class="search-bar" action="#">
+                <input type="text" placeholder="What are you looking for...">
+                <button class="search-btn"><span class="search-btn-text">SEARCH</span><span
+                        class="search-btn-icon"></span></button>
+            </form>
+            <div class="header-right">
+                <a href="#" class="cart">
+                    <i class="ri-shopping-cart-line fs-1 text-primary"></i>
+                    <span class="cart-items-count">122</span>
+                </a>
+                <a href="#" class="user">
+                    <i class="ri-account-circle-line fs-1 text-primary"></i>
+                </a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="nav-menu">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">Special Day</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="wrapper">
+            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <a href="#" class="carousel-item active">
+                        <img src="./assets/images/carousel/c-d-x-PDX_a_82obo-unsplash.jpg" class="d-block w-100"
+                            alt="...">
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <img src="./assets/images/carousel/eniko-kis-KsLPTsYaqIQ-unsplash.jpg" class="d-block w-100"
+                            alt="...">
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <img src="./assets/images/carousel/rachit-tank-2cFZ_FB08UM-unsplash.jpg" class="d-block w-100"
+                            alt="...">
+                    </a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="categories">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="text-primary">Categories</h3>
+                    </div>
+                    <div class="category-row">
+                        <a href="#" class="card category-card">
+                            <img src="./assets/images/products/alexandra-gorn-FXHCqfusN-c-unsplash.jpg" alt="">
+                            <div class="category-body">
+                                <div class="category-title">Protaper Motorcycle Gear</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card category-card">
+                            <img src="./assets/images/products/freestocks-k-Rp0V0XWWU-unsplash.jpg" alt="">
+                            <div class="category-body">
+                                <div class="category-title">Protaper Motorcycle Gear</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card category-card">
+                            <img src="./assets/images/products/freestocks-PuYPLH0BQq0-unsplash.jpg" alt="">
+                            <div class="category-body">
+                                <div class="category-title">Protaper Motorcycle Gear</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card category-card">
+                            <img src="./assets/images/products/jess-bailey-f94JPVrDbnY-unsplash.jpg" alt="">
+                            <div class="category-body">
+                                <div class="category-title">Protaper Motorcycle Gear</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card category-card">
+                            <img src="./assets/images/products/jim-kalligas-Cpudl9zBvQs-unsplash.jpg" alt="">
+                            <div class="category-body">
+                                <div class="category-title">Protaper Motorcycle Gear</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card category-card">
+                            <img src="./assets/images/products/wijdan-mq-H5yiRXDUkto-unsplash.jpg" alt="">
+                            <div class="category-body">
+                                <div class="category-title">Protaper Motorcycle Gear</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="best-offers mt-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="text-primary">Best Offers</h3>
+                            <a href="#">View All</a>
+                    </div>
+                    <div class="product-row">
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/alexandra-gorn-FXHCqfusN-c-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/freestocks-k-Rp0V0XWWU-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/freestocks-PuYPLH0BQq0-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/jess-bailey-f94JPVrDbnY-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/jim-kalligas-Cpudl9zBvQs-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/wijdan-mq-H5yiRXDUkto-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/alexandra-gorn-FXHCqfusN-c-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/freestocks-k-Rp0V0XWWU-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/freestocks-PuYPLH0BQq0-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/jess-bailey-f94JPVrDbnY-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/jim-kalligas-Cpudl9zBvQs-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                        <a href="./product-detail.html" class="card product-card">
+                            <img src="./assets/images/products/wijdan-mq-H5yiRXDUkto-unsplash.jpg" alt="">
+                            <div class="product-body">
+                                <div class="product-title">Protaper Motorcycle Gear Shifter Boot Shoe Protectors Covers
+                                    |
+                                    Motorcycle
+                                    Gear Shifter Cover For Shoe Protection</div>
+                                <div class="product-price">
+                                    <span class="selling-price">Rs. 350</span>
+                                    <div class="discount-amount">
+                                        <span class="special-price">Rs. 500</span>
+                                        <span class="discount-percentage">-34%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">Add to Cart</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <img src="./assets/images/logo.png" alt="Logo" height="60px">
+                    <p><i class="ri-phone-line"></i> +977 98000000</p>
+                    <p><i class="ri-smartphone-line"></i> 091417163, 091417164</p>
+                    <p><i class="ri-mail-line"></i> yourmail@gmail.com</p>
+                    <p><i class="ri-earth-line"></i> www.flipket.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>TOP CITIES</h3>
+                    <ul>
+                        <li>New Delhi</li>
+                        <li>Bengaluru</li>
+                        <li>Hyderabad</li>
+                        <li>Kolkata</li>
+                        <li>Gurugram</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CATEGORIES</h3>
+                    <ul>
+                        <li><a href="#">Vegetables</a></li>
+                        <li><a href="#">Grocery & Staples</a></li>
+                        <li><a href="#">Breakfast & Dairy</a></li>
+                        <li><a href="#">Soft Drinks</a></li>
+                        <li><a href="#">Biscuits & Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>ABOUT US</h3>
+                    <ul>
+                        <li>Company Information</li>
+                        <li>Careers</li>
+                        <li>Store Location</li>
+                        <li>Affiliate Program</li>
+                        <li>Copyright</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2024. filpket.com. All rights reserved</p>
+            </div>
+        </footer>
+
+        <div class="bottom-bar">
+            <a href="#" class="bottom-bar-item text-muted">
+                <i class="ri-home-4-line"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="bottom-bar-item text-muted">
+                <i class="ri-gift-line"></i>
+                <span>Gifts</span>
+            </a>
+            <a href="#" class="bottom-bar-item text-muted">
+                <i class="ri-shopping-cart-line"></i>
+                <span class="bottom-bar-cart-count">122</span>
+                <span>Cart</span>
+            </a>
+            <a href="#" class="bottom-bar-item text-muted">
+                <i class="ri-account-circle-line"></i>
+                <span>Account</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
