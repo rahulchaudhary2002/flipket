@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Product | Flipket</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/icons.min.css">
     <link rel="stylesheet" href="./assets/css/app.css">
@@ -30,7 +31,8 @@
             </a>
             <form class="search-bar" action="#">
                 <input type="text" placeholder="What are you looking for...">
-                <button class="search-btn"><i class="ri-search-line"></i><span class="search-btn-text">SEARCH</span></button>
+                <button class="search-btn"><i class="ri-search-line"></i><span
+                        class="search-btn-text">SEARCH</span></button>
             </form>
             <div class="header-right">
                 <a href="#" class="cart">
@@ -130,6 +132,257 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-2">
+                    <div class="col-md-12">
+                        <div class="accordion" id="product-view-details">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Product Details
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#product-view-details">
+                                    <div class="accordion-body">
+                                        Although you probably won't get into any legal trouble if you do it just once,
+                                        why risk it? If you made your subscribers a promise, you should honor that. If
+                                        not, you run the risk of a drastic increase in opt outs, which will only hurt
+                                        you in the long run.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button fw-semibold collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Rating & Reviews
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#product-view-details">
+                                    <div class="accordion-body">
+                                        <div class="rating-summary">
+                                            <div class="rating-value">
+                                                <div class="rating-score">4.4/5</div>
+                                                <div class="rating-stars">
+                                                    <i class="ri-star-fill text-yellow"></i>
+                                                    <i class="ri-star-fill text-yellow"></i>
+                                                    <i class="ri-star-fill text-yellow"></i>
+                                                    <i class="ri-star-fill text-yellow"></i>
+                                                    <i class="ri-star-fill text-lightgray"></i>
+                                                </div>
+                                                <div class="total-ratings">(33 Ratings)</div>
+                                            </div>
+                                            <div class="rating-bar">
+                                                <div class="rating-item">
+                                                    <div class="rating-stars">
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="filled-bar" style="width: 63%;"></div>
+                                                    </div>
+                                                    <span>21</span>
+                                                </div>
+                                                <div class="rating-item">
+                                                    <div class="rating-stars">
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="filled-bar" style="width: 24%;"></div>
+                                                    </div>
+                                                    <span>9</span>
+                                                </div>
+                                                <div class="rating-item">
+                                                    <div class="rating-stars">
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="filled-bar" style="width: 3%;"></div>
+                                                    </div>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="rating-item">
+                                                    <div class="rating-stars">
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="filled-bar" style="width: 6%;"></div>
+                                                    </div>
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="rating-item">
+                                                    <div class="rating-stars">
+                                                        <i class="ri-star-fill text-yellow"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                        <i class="ri-star-fill text-lightgray"></i>
+                                                    </div>
+                                                    <div class="bar">
+                                                        <div class="filled-bar" style="width: 3%;"></div>
+                                                    </div>
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-section">
+                                            <div class="review-header">
+                                                <div class="review-title">Product Reviews</div>
+                                                <div class="review-header-right">
+                                                    <div class="review-sort-group">
+                                                        <label for="sort"><i class="ri-arrow-up-down-fill"></i> Sort:
+                                                        </label>
+                                                        <select name="sort" id="sort"
+                                                            data-init-plugin="select2-no-search">
+                                                            <option value="relevance" selected>Relevance</option>
+                                                            <option value="recent">Recent</option>
+                                                            <option value="hightolow">Rating: High to Low</option>
+                                                            <option value="lowtohigh">Rating: Low to High</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="review-filter-group">
+                                                        <label for="filter"><i class="ri-filter-line"></i> Filter:
+                                                        </label>
+                                                        <select name="filter" id="filter"
+                                                            data-init-plugin="select2-no-search">
+                                                            <option value="allstar" selected>All star</option>
+                                                            <option value="5star">5 star</option>
+                                                            <option value="4star">4 star</option>
+                                                            <option value="3star">3 star</option>
+                                                            <option value="2star">2 star</option>
+                                                            <option value="1star">1 star</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="review-body">
+                                                <div class="review-item">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="rating-stars">
+                                                            <i class="ri-star-fill text-yellow"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                        </div>
+                                                        <div class="text-muted">
+                                                            4 week ago
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviewer-name text-muted h5">Rahul Chaudhary</div>
+                                                    <div class="review-message-box mt-2">
+                                                        <div class="text-review-message">Perfect then picture</div>
+                                                        <div class="d-flex gap-1 flex-wrap">
+                                                            <img src="./assets/images/products/jess-bailey-f94JPVrDbnY-unsplash.jpg"
+                                                                alt="" width="80" height="80">
+                                                            <img src="./assets/images/products/jim-kalligas-Cpudl9zBvQs-unsplash.jpg"
+                                                                alt="" width="80" height="80">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-item">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="rating-stars">
+                                                            <i class="ri-star-fill text-yellow"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                            <i class="ri-star-fill text-lightgray"></i>
+                                                        </div>
+                                                        <div class="text-muted">
+                                                            4 week ago
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviewer-name text-muted h5">Rahul Chaudhary</div>
+                                                    <div class="review-message-box mt-2">
+                                                        <div class="text-review-message">Perfect then picture</div>
+                                                        <div class="d-flex gap-1 flex-wrap">
+                                                            <img src="./assets/images/products/jess-bailey-f94JPVrDbnY-unsplash.jpg"
+                                                                alt="" width="80" height="80">
+                                                            <img src="./assets/images/products/jim-kalligas-Cpudl9zBvQs-unsplash.jpg"
+                                                                alt="" width="80" height="80">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul
+                                                    class="pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0">
+                                                    <!-- Previous Page -->
+                                                    <li class="page-item disabled">
+                                                        <a href="javascript:;" class="page-link"><i
+                                                                class="ri-arrow-left-s-line"></i></a>
+                                                    </li>
+
+                                                    <!-- First Page and Ellipsis -->
+                                                    <li class="page-item"><a href="javascript:;" class="page-link">1</a>
+                                                    </li>
+                                                    <li class="page-item"><span class="page-link">...</span></li>
+
+                                                    <!-- Page Numbers -->
+                                                    <li class="page-item">
+                                                        <a href="javascript:;" class="page-link">4</a>
+                                                    </li>
+                                                    <li class="page-item active">
+                                                        <a href="javascript:;" class="page-link">5</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a href="javascript:;" class="page-link">6</a>
+                                                    </li>
+
+                                                    <!-- Last Page and Ellipsis -->
+                                                    <li class="page-item"><span class="page-link">...</span></li>
+                                                    <li class="page-item"><a href="javascript:;"
+                                                            class="page-link">10</a></li>
+
+                                                    <!-- Next Page -->
+                                                    <li class="page-item">
+                                                        <a href="javascript:;" class="page-link"><i
+                                                                class="ri-arrow-right-s-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button fw-semibold collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Product FAQs
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#product-view-details">
+                                    <div class="accordion-body">
+                                        Now that you have a general idea of the amount of texts you will need per month,
+                                        simply find a plan size that allows you to have this allotment, plus some extra
+                                        for growth. Don't worry, there are no mistakes to be made here. You can always
+                                        upgrade and downgrade.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer">
@@ -197,11 +450,20 @@
             </a>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/pages/product-detail.js"></script>
     <script src="./assets/js/app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-init-plugin=select2-no-search]').select2({
+                minimumResultsForSearch: Infinity
+            });
+        })
+    </script>
 </body>
 
 </html>
